@@ -1,0 +1,119 @@
+baseURL = "https://felipecordero.com"
+languageCode = "en-us"
+title = "Daniel Lo"
+theme = "careercanvas"
+
+[build]
+  writeStats = true
+
+[params]
+name = "Daniel Lo"
+tagline = "Software Engineer"
+location = "Taipei, Taiwan"
+email = "m0989062418@gmail.com"
+profile_image = "images/daniel.jpg"
+description = "Structural engineer and software developer expanding into AI/ML to solve complex engineering and automation challenges."
+author = "Daniel Lo"
+
+og_image = "images/daniel.jpg"
+
+hero_description = "Structural engineer and software developer with 14+ years in Architecture, Engineering, and Construction (AEC), expanding expertise with AI/ML to build intelligent solutions for complex engineering problems."
+hero_location = "Taipei, Taiwan"
+
+linkedin_url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330"
+linkedin_text = "linkedin.com/in/chung-yung-lo-790ab6330"
+github_url = "https://github.com/Daniel-LoCY"
+github_text = "github.com/Daniel-LoCY"
+
+copyright = "© 2025 | Daniel Lo"
+
+collab_tags = [
+  "AI/ML Solutions",
+  "Engineering Software",
+  "R&D & Innovation",
+  "Technical Leadership",
+  "Construction Tech"
+]
+
+resume_url_en = "/files/Felipe_Cordero_CV_English_version.pdf"
+resume_url_fr = "/files/Felipe_Cordero_CV_French_version.pdf"
+resume_label = "View CV"
+
+formspree_endpoint = "https://formspree.io/f/xgvkkdnn" # Change to your Formspree endpoint
+
+# Technical skills configuration
+[params.technical_skills]
+# FontAwesome brand icons (for special icons like Python, JS, etc.)
+brand_icons = ["python", "js", "html5", "css3-alt", "linux", "docker", "github", "gitlab"]
+
+[[params.social]]
+icon = "linkedin-in"
+url = "https://www.linkedin.com/in/chung-yung-lo-790ab6330"
+
+[[params.social]]
+icon = "github"
+url = "https://github.com/Daniel-LoCY"
+
+sectionPagesMenu = 'main'
+
+[[menu.main]]
+  name = "About"
+  url = "/#about"
+  weight = 2
+
+[[menu.main]]
+  name = "Skills"
+  url = "/#skills"
+  weight = 3
+
+[[menu.main]]
+  name = "Experience"
+  url = "/#experience"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 5
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 60
+
+[[menu.main]]
+  name = "Technical Skills"
+  url = "/#technical"
+  weight = 4.5
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[server]
+  [[server.headers]]
+    for = "/**/*.css"
+    [server.headers.values]
+      Content-Type = "text/css"
+
+[menu]
+  [[menu.main]]
+    name = "Structural Engineering"
+    url = "/engineering/"
+    weight = 50
+    pre = "engineering"
+  [[menu.main]]
+    name = "Contributions"
+    url = "/contributions/"
+    weight = 51
+    pre = "contributions"
+
+
+
+
